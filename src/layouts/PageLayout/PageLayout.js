@@ -1,12 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import './PageLayout.scss'
 import Header from '../../components/Header'
 // import { IndexLink, Link } from 'react-router'
 
 export const PageLayout = ({ children }) => (
   <div>
     <Header SiteName='Yasin Selek' />
+    {children}
   </div>
 
   /*

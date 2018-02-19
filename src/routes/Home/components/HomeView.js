@@ -1,11 +1,22 @@
 import React from 'react'
-import DuckImage from '../assets/Duck.jpg'
-import './HomeView.scss'
 
 export const HomeView = () => (
-  <div>
-    <h4>Welcome!</h4>
-    <img alt='This is a duck, because Redux!' className='duck' src={DuckImage} />
+  <div className='container'>
+    <div className='row justify-content-center'>
+      <div className='col-4'>
+        <form>
+          <div className='form-group'>
+            <label>Email address</label>
+            <input type='email' className='form-control' placeholder='Enter email' />
+          </div>
+          <div className='form-group'>
+            <label htmlFor='exampleInputPassword1'>Password</label>
+            <input type='password' className='form-control' placeholder='Password' />
+          </div>
+          <button type='submit' className='btn btn-primary'>Submit</button>
+        </form>
+      </div>
+    </div>
   </div>
 )
 
